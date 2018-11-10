@@ -1,4 +1,4 @@
-package com.animage.plasafranchise;
+package com.franchise;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.animage.plasafranchise;
+package com.franchise;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

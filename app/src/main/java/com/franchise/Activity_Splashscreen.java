@@ -1,4 +1,4 @@
-package com.animage.plasafranchise;
+package com.franchise;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -25,7 +25,7 @@ public class Activity_Splashscreen extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_activity__splashscreen);
 
-		img_Logo = (ImageView) findViewById(R.id.img_trasco);
+		img_Logo = (ImageView) findViewById(R.id.img_plasaf);
 		img_Logo_Plasa = (ImageView)findViewById(R.id.img_plasaf);
 		
 //		new Async_Load().execute();
@@ -47,38 +47,9 @@ public class Activity_Splashscreen extends Activity {
 			@Override
 			public void onAnimationEnd(Animation animation) {
 				img_Logo.setVisibility(View.GONE);
-
-				AnimationSet set = new AnimationSet(true);
-				AlphaAnimation anim_reveal = new AlphaAnimation(0.00f, 1.00f);
-				anim_reveal.setDuration(2500);
-
-				AlphaAnimation anim_dissappear = new AlphaAnimation(1.00f, 0.00f);
-				anim_dissappear.setDuration(2500);
-				anim_dissappear.setStartOffset(3500);
-
-				set.addAnimation(anim_reveal);
-				set.addAnimation(anim_dissappear);
-
-				anim_dissappear.setAnimationListener(new Animation.AnimationListener() {
-					@Override
-					public void onAnimationStart(Animation animation) {
-
-					}
-
-					@Override
-					public void onAnimationEnd(Animation animation) {
-						startActivity(new Intent(getApplicationContext(),
-								Activity_MenuUtama.class));
-						finish();
-					}
-
-					@Override
-					public void onAnimationRepeat(Animation animation) {
-
-					}
-				});
-
-				img_Logo_Plasa.startAnimation(set);
+				startActivity(new Intent(getApplicationContext(),
+						Activity_MenuUtama.class));
+				finish();
 
 			}
 

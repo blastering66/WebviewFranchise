@@ -17,7 +17,7 @@
         android:layout_width="300dp"
         android:layout_height="130dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo_plasa" />
+        android:src="@drawable/logo_franchiseglobal" />
 
 
 </RelativeLayout>
