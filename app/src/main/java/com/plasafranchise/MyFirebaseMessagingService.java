@@ -1,4 +1,4 @@
-package com.franchise;
+package com.plasafranchise;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -11,7 +11,6 @@ import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.google.firebase.iid.FirebaseInstanceIdService;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

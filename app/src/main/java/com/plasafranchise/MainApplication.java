@@ -1,4 +1,4 @@
-package com.franchise;
+package com.plasafranchise;
 
 import android.app.Application;
 import android.support.annotation.NonNull;

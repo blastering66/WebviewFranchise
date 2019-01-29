@@ -6,7 +6,7 @@ android {
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "com.franchise"
+        applicationId "com.plasafranchise"
         minSdkVersion 14
         targetSdkVersion 26
     }
